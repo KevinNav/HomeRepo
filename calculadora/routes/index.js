@@ -19,19 +19,19 @@ router.post('/calculadora', function(req, res, next) {
     console.log(resultado);
   }
 
-  if(req.body.btnSumar && true){
+  if(req.body.btnRestar && true){
     console.log("entro a sumar")
     resultado = parseFloat(req.body.txtNumero1)-parseFloat(req.body.txtNumero2);
     console.log(resultado);
   }
 
-  if(req.body.btnSumar && true){
+  if(req.body.btnMultipiplciar && true){
     console.log("entro a sumar")
     resultado = parseFloat(req.body.txtNumero1)*parseFloat(req.body.txtNumero2);
     console.log(resultado);
   }
 
-  if(req.body.btnSumar && true){
+  if(req.body.btnDividir && true){
     console.log("entro a sumar")
     resultado = parseFloat(req.body.txtNumero1)/parseFloat(req.body.txtNumero2);
     console.log(resultado);
