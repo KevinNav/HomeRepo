@@ -10,4 +10,33 @@ router.get('/calculadora', function(req, res, next) {
   res.render('calculadora', {});
 });
 
+router.post('/calculadora', function(req, res, next) {
+  console.log(req.body);
+  var resultado = 0;
+  if(req.body.btnSumar && true){
+    console.log("entro a sumar")
+    resultado = parseFloat(req.body.txtNumero1)+parseFloat(req.body.txtNumero2);
+    console.log(resultado);
+  }
+
+  if(req.body.btnSumar && true){
+    console.log("entro a sumar")
+    resultado = parseFloat(req.body.txtNumero1)-parseFloat(req.body.txtNumero2);
+    console.log(resultado);
+  }
+
+  if(req.body.btnSumar && true){
+    console.log("entro a sumar")
+    resultado = parseFloat(req.body.txtNumero1)*parseFloat(req.body.txtNumero2);
+    console.log(resultado);
+  }
+
+  if(req.body.btnSumar && true){
+    console.log("entro a sumar")
+    resultado = parseFloat(req.body.txtNumero1)/parseFloat(req.body.txtNumero2);
+    console.log(resultado);
+  }
+  res.render('calculadora', {});
+});
+
 module.exports = router;
