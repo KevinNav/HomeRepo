@@ -36,7 +36,9 @@ router.post('/calculadora', function(req, res, next) {
     resultado = parseFloat(req.body.txtNumero1)/parseFloat(req.body.txtNumero2);
     console.log(resultado);
   }
-  res.render('calculadora', {});
+  //res.render('calculadora', {});
+  req.body.resultado = resultado;
+  res.render('calculadora', req.body);
 });
 
 module.exports = router;
