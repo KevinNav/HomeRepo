@@ -6,8 +6,6 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.get('/calculadora', function(req, res, next) {
-  res.render('calculadora', {});
-});
+
 
 module.exports = router;
